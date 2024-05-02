@@ -120,17 +120,11 @@ function getInviteInfo() {
       verificationLevel.innerHTML = `<span class="field-label">Verification Level:</span> ${data.guild.verification_level || "Not Found"}`;
       otherInfoContainer.appendChild(verificationLevel);
 
-      // Features
-      var features = document.createElement("div");
-      features.classList.add("info-field");
-      features.innerHTML = `<span class="field-label">Features:</span> ${data.guild.features ? data.guild.features.join(", ") : "Not Found"}`;
-      otherInfoContainer.appendChild(features);
-
       inviteInfoDiv.appendChild(otherInfoContainer);
 
       // Create a copy button
       var copyBtn = document.createElement("button");
-      copyBtn.innerText = "Copy";
+      copyBtn.innerText = "Copy full JSON";
       copyBtn.classList.add("copy-btn");
       copyBtn.onclick = function() {
         var textarea = document.createElement("textarea");
