@@ -1,0 +1,128 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e2124;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #36393f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #202225;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7289da;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #677bc4;
+}
+
+.invite-info {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.server-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.server-banner,
+.server-splash {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.server-info {
+  margin-bottom: 30px;
+}
+
+.server-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.server-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+pre {
+  background-color: #2f3136;
+  padding: 20px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.copy-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7289da;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #677bc4;
+}
+
+.other-info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.info-field {
+  background-color: #2f3136;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.field-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
