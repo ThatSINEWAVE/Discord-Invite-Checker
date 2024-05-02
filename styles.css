@@ -1,25 +1,59 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #1e2124;
+  background-color: #1e1f22;
   color: #ffffff;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2a2c2f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-left h1 {
+  font-size: 24px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.header-btn {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #950101;
+  transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: #550000;
 }
 
 .container {
   max-width: 800px;
   margin: 50px auto;
   padding: 40px;
-  background-color: #36393f;
+  background-color: #2a2c2f;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 input[type="text"] {
@@ -28,7 +62,7 @@ input[type="text"] {
   margin-bottom: 20px;
   border: none;
   border-radius: 5px;
-  background-color: #202225;
+  background-color: #1e1f22;
   color: #ffffff;
   font-size: 16px;
 }
@@ -37,7 +71,7 @@ button {
   padding: 12px 24px;
   border: none;
   border-radius: 5px;
-  background-color: #7289da;
+  background-color: #950101;
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
@@ -45,7 +79,7 @@ button {
 }
 
 button:hover {
-  background-color: #677bc4;
+  background-color: #550000;
 }
 
 .invite-info {
@@ -98,14 +132,14 @@ code {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #7289da;
+  background-color: #950101;
   color: #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .copy-btn:hover {
-  background-color: #677bc4;
+  background-color: #550000;
 }
 
 .other-info-container {
@@ -116,7 +150,7 @@ code {
 }
 
 .info-field {
-  background-color: #2f3136;
+  background-color: #1e1f22;
   padding: 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -125,4 +159,17 @@ code {
 .field-label {
   font-weight: bold;
   margin-right: 5px;
+}
+
+footer {
+  background-color: #2a2c2f;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
 }
