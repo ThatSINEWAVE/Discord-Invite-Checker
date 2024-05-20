@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discord Invite Checker</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <header>
-    <div class="header-left">
-      <h1>Invite Checker</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Invite Checker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1>Invite Checker</h1>
+      </div>
+      <div class="header-right">
+        <a href="https://github.com/ThatSINEWAVE/Discord-Invite-Checker" class="header-btn">GitHub</a>
+        <a href="https://ko-fi.com/thatsinewave" class="header-btn">Support</a>
+        <a href="https://discord.com/invite/2nHHHBWNDw" class="header-btn">Discord</a>
+      </div>
+    </header>
+    <div class="container">
+      <input type="text" id="inviteInput" placeholder="Enter a Discord invite link">
+      <button onclick="getInviteInfo()">Get Invite Info</button>
+      <div class="invite-info" id="inviteInfo"></div>
     </div>
-    <div class="header-right">
-      <a href="https://github.com/ThatSINEWAVE/Discord-Invite-Checker" class="header-btn">GitHub</a>
-      <a href="https://ko-fi.com/thatsinewave" class="header-btn">Support</a>
-      <a href="https://discord.com/invite/2nHHHBWNDw" class="header-btn">Discord</a>
-    </div>
-  </header>
-
-  <div class="container">
-    <input type="text" id="inviteInput" placeholder="Enter a Discord invite link">
-    <button onclick="getInviteInfo()">Get Invite Info</button>
-    <div class="invite-info" id="inviteInfo"></div>
-  </div>
-
-  <footer>
-    <p>MIT LICENSE &copy; 2024 - ThatSINEWAVE</p>
-  </footer>
-
-  <script src="script.js"></script>
-
-</body>
+    <footer>
+      <p>MIT LICENSE &copy; 2024 - ThatSINEWAVE</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
